@@ -3,7 +3,6 @@ using System;
 
 namespace NetCoreSampleApp.Controllers
 {
-    [Route("api/[controller]")]
     public class HomeController : Controller
     {
         // GET api/values
