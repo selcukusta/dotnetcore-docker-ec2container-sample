@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace GeoLocation.Controllers
+namespace NetCoreSampleApp.Controllers
 {
     [Route("api/[controller]")]
-    public class DateController : Controller
+    public class HomeController : Controller
     {
-        // GET: api/values
+        // GET api/values
         [HttpGet]
-        public JsonResult Get()
+        public JsonResult Index()
         {
             return new JsonResult(new { Date = DateTime.Now.ToUniversalTime().ToString("r") });
         }

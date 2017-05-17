@@ -1,6 +1,6 @@
 sudo: required
 language: csharp
-solution: src/GeoLocation.sln
+solution: src/NetCoreSampleApp.sln
 services:
   - docker
 matrix:
