@@ -1,5 +1,5 @@
-sudo: required
 language: csharp
+sudo: required
 solution: src/NetCoreSampleApp.sln
 services:
   - docker
@@ -15,5 +15,8 @@ script:
   - chmod +x ./deploy-envs.sh
   - chmod +x ./scripts/build.sh
   - chmod +x ./scripts/deploy.sh
+  - chmod +x ./scripts/test.sh
+  - cd scripts && ./test.sh  
+after_success:
   - cd scripts && ./build.sh
   - if [ "$TRAVIS_BRANCH" == "master" ]; then ./deploy.sh; fi
