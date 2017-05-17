@@ -19,10 +19,6 @@
                 {
                     "name": "VIRTUAL_HOST",
                     "value": "${AWS_VIRTUAL_HOST}"
-                },
-                {
-                    "name": "SERVICESTACK_LICENSE",
-                    "value": "${SERVICESTACK_LICENSE}"
                 }
             ]
         }
